@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  background-image: url("field.jpg");
+  background-position: center bottom;
+  background-attachment: fixed; }
+
+h1 {
+  text-align: center;
+  color: #fff; }
+
+.info {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff; }
+
+.crest {
+  height: 30px; }
+
+#premier-league-table {
+  padding: 20px 0 50px;
+  max-width: 900px;
+  margin: 0 auto; }
+
+.table-wrapper table {
+  border-spacing: 0;
+  margin: 0 auto;
+  color: #cdcdcd; }
+.table-wrapper tbody tr {
+  background: rgba(0, 0, 0, 0.5); }
+  .table-wrapper tbody tr:hover {
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer; }
+.table-wrapper thead tr {
+  background: rgba(0, 0, 0, 0.8); }
+.table-wrapper td,
+.table-wrapper th {
+  padding: 10px 20px;
+  text-align: center; }
+.table-wrapper th {
+  position: relative;
+  cursor: pointer; }
+  .table-wrapper th.ascending {
+    background: #000; }
+    .table-wrapper th.ascending:after {
+      content: "\f0de";
+      font-family: "FontAwesome";
+      position: absolute;
+      right: 5px; }
+  .table-wrapper th.descending {
+    background: #000; }
+    .table-wrapper th.descending:after {
+      content: "\f0dd";
+      font-family: "FontAwesome";
+      position: absolute;
+      right: 5px; }
+.table-wrapper td {
+  border-bottom: 1px rgba(255, 255, 255, 0.5) solid; }
+
+[id^="slider-"] {
+  margin: 20px 0;
+  height: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none !important; }
+  [id^="slider-"] .ui-slider-handle {
+    border-radius: 50%;
+    font-size: 12px;
+    width: 2em;
+    height: 2em;
+    top: -.8em;
+    line-height: 2em;
+    text-align: center;
+    background: #060;
+    color: #fff;
+    border: none;
+    font-family: inherit; }
+  [id^="slider-"] .ui-slider-range {
+    background: #093; }
+
+.search-sliders {
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 700; }
+
+#searchField {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: 1px #fff solid;
+  padding: 5px;
+  font-size: 17px;
+  line-height: 17px; }
+
+#search-form label {
+  display: block;
+  color: #fff;
+  margin: 10px 0;
+  font-weight: 700; }
+
+.api-info {
+  text-align: center; }
+  .api-info,
+  .api-info a {
+    color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

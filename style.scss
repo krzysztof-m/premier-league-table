@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  background-image: url("field.jpg");
+  background-position: center bottom;
+  background-attachment: fixed;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+}
+.info {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+.crest {
+  height: 30px;
+}
+#premier-league-table {
+  padding: 20px 0 50px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.table-wrapper {
+  table {
+    border-spacing: 0;
+    margin: 0 auto;
+    color: #cdcdcd;
+  }
+  tbody tr {
+    background: rgba(#000,.5);
+    &:hover {
+       background: rgba(#000,.7);
+      cursor: pointer;
+    }
+  }
+  thead tr {
+      background: rgba(#000,.8);
+    }
+  td,
+  th {
+    padding: 10px 20px;
+    text-align: center;
+  }
+  th {
+    position: relative;
+    cursor: pointer;
+    &.ascending {
+      background: #000;
+      &:after {
+        content: "\f0de";
+        font-family: "FontAwesome";
+        position: absolute;
+        right: 5px;
+      }
+    }
+    &.descending {
+      background: #000;
+      &:after {
+        content: "\f0dd";
+        font-family: "FontAwesome";
+        position: absolute;
+        right: 5px;
+      }
+    }
+  }
+  td {
+    border-bottom: 1px rgba(#fff,.5) solid;
+  }
+}
+.search-wrapper {
+
+}
+[id^="slider-"] {
+  margin: 20px 0;
+  height: 5px;
+  background: rgba(#000,.5);
+  border: none !important;
+  .ui-slider-handle {
+    border-radius: 50%;
+    font-size: 12px;
+    width: 2em;
+    height: 2em;
+    top: -.8em;
+    line-height: 2em;
+    text-align: center;
+    background: #060;
+    color: #fff;
+    border: none;
+    font-family: inherit;
+  }
+  .ui-slider-range {
+    background: #093;
+  }
+}
+.search-sliders {
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+#searchField {
+  width: 100%;
+  background-color: rgba(#000,.6);
+  color: #fff;
+  border: 1px #fff solid;
+  padding: 5px;
+  font-size: 17px;
+  line-height: 17px;
+}
+#search-form {
+  label {
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+    font-weight: 700;
+  }
+}
+.api-info {
+  text-align: center;
+  &,
+  a {
+    color: #fff;
+  }
+}

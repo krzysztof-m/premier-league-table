@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Premier League Table</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Premier League Table</h1>
+  <p class="info">filter table with sliders and search form, sort teams by clicking on table headers</p>
+  <div id="premier-league-table">
+    <div class="search-wrapper">
+      <div class="search-form-wrapper">
+        <form id="search-form">
+          <label for="searchField">Search</label>
+          <input type="text" id="searchField" name="searchField" placeholder="Search team" />
+          <!--<button type="submit" id="searchBtn"><i class="fa fa-search"></i></button>-->
+        </form>
+      </div>
+      <!-- /.search-form-wrapper -->
+      <div class="search-sliders"> Points
+        <div id="slider-points"></div>
+        <!-- /#slider-points -->Goal Difference
+        <div id="slider-gd"></div>
+        <!-- /#slider-gd -->Wins
+        <div id="slider-wins"></div>
+        <!-- /#slider-wins -->
+      </div>
+      <!-- /.search-sliders -->
+    </div>
+    <!-- /.search-wrapper -->
+    <div class="table-wrapper">
+      <table class="football-table">
+        <thead>
+          <tr>
+            <th data-type="number" data-compare="position">Position</th>
+            <th colspan="2" data-type="string" data-compare="teamName">Club</th>
+            <th data-type="number" data-compare="playedGames">Played</th>
+            <th data-type="number" data-compare="points">Points</th>
+            <th data-type="number" data-compare="goals">GF</th>
+            <th data-type="number" data-compare="goalsAgainst">GA</th>
+            <th data-type="number" data-compare="goalDifference">GD</th>
+            <th data-type="number" data-compare="wins">W</th>
+            <th data-type="number" data-compare="draws">D</th>
+            <th data-type="number" data-compare="losses">L</th>
+          </tr>
+        </thead>
+        <tbody> </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- /#premier-league-table -->
+  <p class="api-info">API: <a href="http://api.football-data.org/index" target="_blank">football-data.org</a></p>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="script.js"></script>
+  <script src=""></script>
+  <script src=""></script>
+</body>
+
+</html>
